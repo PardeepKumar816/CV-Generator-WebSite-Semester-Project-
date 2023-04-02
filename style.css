@@ -1,0 +1,164 @@
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background-color: skyblue;
+	}
+	
+	.container {
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	
+	header, footer {
+		margin: 0;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		background-color: #efa81a;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	}
+	
+	header img {
+		height: 70px;
+	}
+	
+	header button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	label {
+		margin-top: 10px;
+	}
+	
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	textarea {
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		resize: vertical;
+		height: 30px;
+	}
+	
+	input[type=button] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-top: 10px;
+	}
+	
+	input[type=button]:hover {
+		background-color: #45a049;
+	}
+
+	.field-container {
+		position: relative;
+		/* height: fit-content; */
+	}
+	
+	#field {
+		width: 100%;
+		height: 50px;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+	}
+	
+	.add-field-btn {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		/* padding: 10px; */
+		border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+	}
+	
+	
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		background-color: #efa81a;
+		box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+	}
+	
+	footer img {
+		height: 30px;
+	}
+	
+	footer p {
+		margin: 0;
+		
+	}
+
+	.social-media {
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  .social-media img {
+		height: 30px;
+		cursor: pointer;
+		margin-right: 10px;
+	  }
+	
+	footer .facebook {
+		height: 30px;
+		cursor: pointer;
+	}
+
+	.hero{
+		background-color: rgb(85, 85, 85);
+		text-align: center;
+		padding: 10px;
+		color:white
+	}
+	
+	.main{
+		display: flex;
+		justify-content: space-around;
+		padding: 10px;
+		background-color: rgb(68, 218, 255);
+	}
+	
+	.main h2{
+		border-bottom: 2px solid rgb(7, 7, 7);
+		width: max-content;
+		color:white
+	}
+	.btn{
+		text-align: center;
+		margin: 2px;
+	}
+	

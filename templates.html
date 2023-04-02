@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+    <script src="script.js"></script>
+    <style>
+        html,body{
+            background-color: skyblue;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-row a {
+            margin: 0 10px;
+        }
+
+        .image-row a img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .image-row a:hover img {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-row">
+        <a href="#"><img src="assets\cv-1.jpg" alt="Image 1" onclick="setNavigate(true)"></a>
+        <a href="#"><img src="assets\cv-2.jpg" alt="Image 2" onclick="setNavigate(false)"></a>
+    </div>
+</body>
+</html>

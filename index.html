@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CV Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="assets\logo.png" alt="Logo">
+		</div>
+		<div class="header-buttons">
+			<button id="templates">Templates</button>
+
+		</div>
+	</header>
+
+	<div class="container">
+		<h1>CV Generator</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone"><br>
+
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address"><br>
+
+			<label for="education">Education:</label>
+			<div class="field-container">
+				<textarea id="field" name="education"></textarea><br>
+				<button class="add-field-btn" onclick="addField('education', event)">Add Education</button>
+			</div>
+
+			<label for="experience">Experience:</label>
+			<div class="field-container">
+				<textarea id="field" name="experience"></textarea><br>
+				<button class="add-field-btn" onclick="addField('experience', event)">Add Experience</button>
+			</div>
+
+
+
+			<label for="skill">Skills:</label>
+			<div class="field-container">
+				<textarea id="field" name="skill"></textarea>
+				<button class="add-field-btn" onclick="addField('skill', event)">Add Skill</button>
+			</div>
+
+
+			<label for="projects">Projects:</label>
+			<div class="field-container">
+				<textarea id="field" name="projects"></textarea><br>
+				<button class="add-field-btn" onclick="addField('projects', event)">Add Projects</button>
+			</div>
+
+
+			<label for="objective">Objective:</label>
+			<div class="field-container">
+				<textarea id="field" name="objective"></textarea><br>
+				<button class="add-field-btn" onclick="addField('objective', event)">Add Objective</button>
+			</div>
+
+
+			<input type="button" value="Generate CV" onclick="generateCV()">
+		</form>
+	</div>
+
+	<footer>
+		<div class="logo">
+			<img src="assets\logo.png" alt="Logo">
+		</div>
+		<div class="footer-text">
+			<p>&copy; 2023 CV Generator</p>
+		</div>
+		<div class="social-media">
+			<a href="https://www.facebook.com" target="_blank"><img src="assets/facebook-logo.png" alt="Facebook" class="facebook"></a>
+			<a href="https://www.instagram.com" target="_blank"><img src="assets/instagram-logo.png" alt="Instagram"
+					class="instagram"></a>
+			<a href="https://www.twitter.com" target="_blank"><img src="assets/twitter-logo.png" alt="Twitter" class="twitter"></a>
+
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
